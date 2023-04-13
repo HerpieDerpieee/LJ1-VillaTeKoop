@@ -1,0 +1,41 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+#root {
+    display:grid;
+    grid-template-columns: 100vw;
+    height: 100vh;
+}
+
+.header {
+    height: 7.5vh;
+    min-height: 100px;
+    background-color: red;
+}
+
+
+
+
+.main {
+    height: calc(100vh - 7.5vh - 250px);
+    background-color: lime;
+    display: flex;
+    justify-content: center;
+}
+.main .container {
+    margin-top: 80px;
+    width: 95%;
+    height: 60%;
+    background-color: pink;
+}
+
+
+
+
+
+.footer {
+    height: 250px;
+    background-color: blue;
+}
