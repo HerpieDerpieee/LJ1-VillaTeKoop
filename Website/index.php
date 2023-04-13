@@ -10,20 +10,13 @@
 </head>
 <body>
     <div id="root">
-        <div class="header">
-            
-        </div>
+        <?php
+            include "Standard/header.php";
 
-        <div class="main">
-            <div class="container">
+            include "index_view.php";
 
-            </div>
-        </div>
-
-        <div class="footer">
-
-        </div>
-
+            include "Standard/footer.php";
+        ?>
     </div>
 </body>
 </html>
