@@ -13,3 +13,46 @@
         <button class="button">Registreer</button>
     </div>
 </div>
+<style>
+    /*---------------------HEADER------------------------*/
+
+#header {
+    background: red;
+    width: 100vw;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+}
+#header .headerContentLeft {
+    width: 30%;
+    display: flex;
+}
+#header .headerContentLeft .logoLeft {
+    width: 50%;
+    background: yellow;
+}
+#header .headerContentLeft .navLinks {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+}
+#header .headerContentLeft .navLinks a {
+    text-decoration: none;
+}
+
+#header .headerContentRight {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    margin-right: 30px;
+}
+#header .headerContentRight button{
+    width: 30%;
+    height: 50%;
+}
+
+
+</style>
