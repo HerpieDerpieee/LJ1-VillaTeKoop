@@ -1,0 +1,29 @@
+* {
+    margin:0;
+    padding:0;
+
+}
+
+:root {
+    --page-height: 150vh;
+    --header-height: 7.5vh;
+    --footer-height: 25vh;
+    --body-height: calc(var(--page-height) - var(--header-height) - var(--footer-height));
+}
+
+#root {
+    height: var(--page-height);
+    width: 100% !important;
+}
+
+
+
+/*---------------------MAIN------------------------*/
+
+#main {
+    width: 100vw;
+    height: var(--body-height);
+    background: deeppink;
+}
+
+
