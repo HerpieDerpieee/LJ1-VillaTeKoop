@@ -5,9 +5,15 @@
 }
 
 :root {
+    --page-height: 100vh;
     --header-height: 7.5vh;
     --footer-height: 25vh;
-    --body-height: calc(100vh - var(--header-height) - var(--footer-height));
+    --body-height: calc(var(--page-height) - var(--header-height) - var(--footer-height));
+}
+
+#root {
+    height: var(--page-height);
+    width: 100% !important;
 }
 
 
@@ -56,4 +62,6 @@
     width: 20vw;
     height: 15vh;
 }
+
+
 

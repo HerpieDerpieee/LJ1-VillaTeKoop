@@ -7,10 +7,10 @@
             </div>
             <div class="imageContainer">
                 <!-- THESE ARE TEMPORARLY DIVS SO I CAN TEXT SIZE< AND I DONT CAN DOWNLOAD IMAGES WITHOUT WIFI -->
-                <div class="img"></div>
-                <div class="img"></div>
-                <div class="img"></div>
-                <div class="img"></div>
+                <div class="img" onclick="window.location.href = 'info.php?id=1';"></div>
+                <div class="img" onclick="window.location.href = 'info.php?id=2';"></div>
+                <div class="img" onclick="window.location.href = 'info.php?id=3';"></div>
+                <div class="img" onclick="window.location.href = 'info.php?id=4';"></div>
             </div>
         </div>
     </div>
