@@ -1,7 +1,7 @@
 <div id="header">
     <div class="headerContentLeft">
         <div class="logoLeft">
-            <div class="logo">LOGO</div>
+            <img src="./img/logo.png" alt="logo" class="logo">
         </div>
         <div class="navLinks">
             <a href="" class="link">Home</a>
@@ -16,7 +16,7 @@
         /*---------------------HEADER------------------------*/
 
         #header {
-            background: red;
+            /*background: rgba(255,255,255,0.5);*/
             width: 100%;
             height: var(--header-height);
             display: flex;
@@ -28,7 +28,9 @@
         }
         #header .headerContentLeft .logoLeft {
             width: 50%;
-            background: yellow;
+            background: none;
+            display: flex;
+            justify-content: center;
         }
         #header .headerContentLeft .navLinks {
             display: flex;
