@@ -17,7 +17,8 @@
     ?>
 
     <div id="form">
-        <form method="post">
+        <form method="post" action="handle_submit.php">
+
         <label for="fname">Voornaam:</label><br>
         <input type="text" id="fname" name="fname" required><br>
         <label for="lname">Achternaam:</label><br>
@@ -29,7 +30,7 @@
         <label for="bod">Bod:</label><br>
         <input type="number" id="bod" name="bod" value="1000000" min="1000000"required><br><br>
 
-        <input type="submit" value="Bied">
+        <input type="submit" name="submit" value="Bied">
         </form> 
 
     </div>

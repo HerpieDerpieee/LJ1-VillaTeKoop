@@ -23,26 +23,14 @@
     $password = "SuperSterkWachtwoord";
     $dbname = "89618_DB_BEROEPS";
 
-    if (!isset($_GET["id"])) {
-        header('Location: ' . 'index.php');
-    }
+
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
     // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    if(isset($_POST['submit'])) {
-        $idVar = $_GET["id"];
-        $voornaam = $_REQUEST['fname'];
-        $achternaam = $_REQUEST['lname'];
-        $tnummer = $_REQUEST['tnum'];
-        $mail = $_REQUEST['mail'];
-        $bod = $_REQUEST['bod'];
 
-        $sql = "INSERT INTO BIDDEN VALUES ($idVar, '$voornaam $achternaam', $bod, '$mail' '$tnummer')";
-        $result = $conn->query($sql);
-    }
 
     $sql = "SELECT name, price FROM BIDDEN WHERE villaID=" . $_GET["id"];
     $result = $conn->query($sql);
@@ -79,6 +67,11 @@
     $conn->close();
     arsort($bidding);
     $bidding = array_slice($bidding, 0, 3);
+
+
+    if (!isset($_GET["id"])) {
+        header('Location: ' . 'index.php');
+    }
 
     include "info_view.php";
 
