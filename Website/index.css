@@ -66,12 +66,29 @@ body {
     width: 100%;
 }
 #main .flexContainer .mainContent .imageContainer .img{
-    background: lightgray;
+    background: transparent;
     margin-left: 60px;
     margin-right: 60px;
     width: 20vw;
-    height: 15vh;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.huisimages{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.huisimages:hover{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
 
 
 

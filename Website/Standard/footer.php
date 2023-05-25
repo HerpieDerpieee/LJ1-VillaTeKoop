@@ -16,13 +16,13 @@
     <div class="belowLine">
         <div class="belowContent">
             <div class="footerSocials">
-                <div class="social"></div>
-                <div class="social"></div>
-                <div class="social"></div>
-                <div class="social"></div>
+                <div class="social mouseOverBigger"></div>
+                <div class="social mouseOverBigger"></div>
+                <div class="social mouseOverBigger"></div>
+                <div class="social mouseOverBigger"></div>
             </div>
             <span>
-                Copyright shit
+                ValentijnLukaasKevin2023©
             </span>
         </div>
     </div>
@@ -105,6 +105,13 @@
             width: 20%;
             height: 100%;
             border-radius: 50px;
+        }
+
+        .mouseOverBigger{
+            transition: 0.3s;
+        }
+        .mouseOverBigger:hover{
+            transform: scale(1.1);
         }
 
 

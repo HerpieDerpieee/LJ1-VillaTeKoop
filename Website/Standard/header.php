@@ -44,6 +44,9 @@
             text-decoration: none;
             color: #5588e7;
         }
+        #header .headerContentLeft .navLinks a:hover{
+            color: #6e9bf0;
+        }
 
         #header .headerContentRight {
             width: 30%;
