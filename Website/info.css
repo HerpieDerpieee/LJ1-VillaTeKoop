@@ -5,7 +5,7 @@
 }
 
 :root {
-    --page-height: 150vh;
+    --page-height: 200vh;
     --header-height: 7.5vh;
     --footer-height: 25vh;
     --body-height: calc(var(--page-height) - var(--header-height) - var(--footer-height));
@@ -25,5 +25,52 @@
     height: var(--body-height);
     background: deeppink;
 }
+#main .slider {
+    width: 100%;
+    height: 50%;
+    background: red;
+}
+#main #mainContent {
+    width: 100%;
+    height: 50%;
+    background: lime;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 35% 45%;
+}
+#mainContent #quote {
+    grid-column: 1;
+    grid-row:1;
+    background: aqua;
+    display: flex;
+    align-items: center;
+}
+#mainContent #indeling {
+    grid-column: 1;
+    grid-row: 2;
+    background: hotpink;
 
-
+}
+#mainContent #boden {
+    grid-column: 2;
+    grid-row:2;
+    background:magenta;
+}
+#mainContent #boden ol {
+    list-style: none;
+}
+#mainContent #maps {
+    grid-column: 1;
+    grid-row: 3;
+    background: crimson;
+}
+#mainContent #maps .temp {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+#mainContent #form {
+    grid-column:2;
+    grid-row:3 !important;
+}
