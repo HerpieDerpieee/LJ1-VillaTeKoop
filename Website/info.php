@@ -14,6 +14,8 @@
 <body>
 <div id="root">
     <?php
+
+
     include "Standard/header.php";
 
     $servername = "localhost";
@@ -21,15 +23,14 @@
     $password = "SuperSterkWachtwoord";
     $dbname = "89618_DB_BEROEPS";
 
-    if (!isset($_GET["id"])) {
-        header('Location: ' . 'index.php');
-    }
+
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
     // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
+
 
     $sql = "SELECT name, price FROM BIDDEN WHERE villaID=" . $_GET["id"];
     $result = $conn->query($sql);
@@ -58,9 +59,19 @@
         header('Location: '.'index.php');
     }
 
+
+
+    
+
+
     $conn->close();
     arsort($bidding);
     $bidding = array_slice($bidding, 0, 3);
+
+
+    if (!isset($_GET["id"])) {
+        header('Location: ' . 'index.php');
+    }
 
     include "info_view.php";
 
