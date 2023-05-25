@@ -14,6 +14,8 @@
 <body>
 <div id="root">
     <?php
+
+
     include "Standard/header.php";
 
     $servername = "localhost";
@@ -29,6 +31,17 @@
     // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
+    }
+    if(isset($_POST['submit'])) {
+        $idVar = $_GET["id"];
+        $voornaam = $_REQUEST['fname'];
+        $achternaam = $_REQUEST['lname'];
+        $tnummer = $_REQUEST['tnum'];
+        $mail = $_REQUEST['mail'];
+        $bod = $_REQUEST['bod'];
+
+        $sql = "INSERT INTO BIDDEN VALUES ($idVar, '$voornaam $achternaam', $bod, '$mail' '$tnummer')";
+        $result = $conn->query($sql);
     }
 
     $sql = "SELECT name, price FROM BIDDEN WHERE villaID=" . $_GET["id"];
@@ -57,6 +70,11 @@
     } else {
         header('Location: '.'index.php');
     }
+
+
+
+    
+
 
     $conn->close();
     arsort($bidding);
