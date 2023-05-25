@@ -9,24 +9,33 @@
 
 
     // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    $conn = new mysqli($servername,
+        $username, $password, $dbname);
+
     // Check connection
     if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+        die("Connection failed: "
+            . $conn->connect_error);
     }
 
-    if(isset($_POST['submit'])) {
-        $idVar = $_GET["id"];
+    try{
+        $idVar = $_POST["id"];
         $voornaam = $_POST['fname'];
         $achternaam = $_POST['lname'];
         $tnummer = $_POST['tnum'];
         $mail = $_POST['mail'];
         $bod = $_POST['bod'];
+        $sql = "INSERT INTO BIDDEN VALUES ($idVar, '$voornaam $achternaam', $bod, '$mail', '$tnummer')";
 
-        $sql = "INSERT INTO BIDDEN VALUES ($idVar, '$voornaam $achternaam', $bod, '$mail' '$tnummer')";
-        $result = $conn->query($sql);
-
-        header("Location: "."index.php");
+        if ($conn->query($sql) === TRUE) {
+            echo "record inserted successfully";
+        } else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+    } catch (Exception $e){
+        echo "error";
     }
+
+    header("Location: "."index.php");
     ?>
 </div>
