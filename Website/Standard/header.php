@@ -9,8 +9,8 @@
         </div>
     </div>
     <div class="headerContentRight">
-        <button class="button">Log In</button>
-        <button class="button">Registreer</button>
+        <button class="button" id="LogIn">Log In</button>
+        <button class="button" id="Regis">Registreer</button>
     </div>
     <style>
         /*---------------------HEADER------------------------*/
@@ -21,6 +21,7 @@
             height: var(--header-height);
             display: flex;
             justify-content: space-between;
+
         }
         #header .headerContentLeft {
             width: 30%;
@@ -37,9 +38,11 @@
             justify-content: space-around;
             width: 50%;
             align-items: center;
+            color: #5588e7;
         }
         #header .headerContentLeft .navLinks a {
             text-decoration: none;
+            color: #5588e7;
         }
 
         #header .headerContentRight {
@@ -53,6 +56,19 @@
         #header .headerContentRight button{
             width: 30%;
             height: 50%;
+            box-shadow: 7px 7px 7px #aaaaaa;
+            border-radius: 10px;
+        }
+        #header .headerContentRight #LogIn{
+            border: #5588e7 solid 2px;
+            color: #5588e7;
+            background-color: white ;
+
+        }
+        #header .headerContentRight #Regis{
+            border: #5588e7 solid 2px;
+            background-color: #5588e7 ;
+            color: white;
         }
     </style>
 </div>

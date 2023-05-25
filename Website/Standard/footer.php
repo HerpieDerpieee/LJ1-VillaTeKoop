@@ -5,7 +5,7 @@
             <a href="">Link 2</a>
             <a href="">Link 3</a>
         </div>
-        <div class="center">Dit is foto</div>
+        <div class="center"><img src="./img/footerimg.png"></div>
         <div class="right">
             <a href="">Link 4</a>
             <a href="">Link 5</a>
@@ -29,7 +29,7 @@
     <style>
         /*---------------------FOOTER------------------------*/
         #footer {
-            background: blue;
+            background: white;
             width: 100%;
             height: var(--footer-height);
             position: absolute;
@@ -41,7 +41,7 @@
             justify-content: space-between;
         }
         #footer hr {
-            border-color: black;
+            border-color: #aaaaaa;
         }
 
         .left, .right {
@@ -66,8 +66,14 @@
 
         #footer .aboveLine .center {
             width: 20%;
-            background-color: goldenrod;
+            background-color: white;
+            display: flex;
+            justify-content: center;
 
+        }
+
+        #footer .aboveLine .center img{
+            height: 100%;
         }
 
 
@@ -79,7 +85,7 @@
         }
         #footer .belowLine .belowContent {
             width: 100%;
-            background: lightpink;
+            background: white;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -95,7 +101,7 @@
 
         }
         #footer .belowLine .belowContent .footerSocials .social {
-            background: gold;
+            background: #5588e7;
             width: 20%;
             height: 100%;
             border-radius: 50px;

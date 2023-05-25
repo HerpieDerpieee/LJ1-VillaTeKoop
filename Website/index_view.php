@@ -2,8 +2,8 @@
     <div class="flexContainer">
         <div class="mainContent">
             <div class="mainText">
-                <h1>Placeholder Title</h1><br>
-                <span>This is a placeholder text, i have no wifi, so i cant put lorem ipsum here :( i have very big depression like that one star in the mario movie</span>
+                <h1>VILLAS4U</h1><br>
+                <span>Your premier real estate agency</span>
             </div>
             <div class="imageContainer">
                 <!-- THESE ARE TEMPORARLY DIVS SO I CAN TEXT SIZE< AND I DONT CAN DOWNLOAD IMAGES WITHOUT WIFI -->

@@ -23,6 +23,7 @@ body {
     background: url("./img/achtergrond.png");
     background-size: cover;
     background-position: center;
+    font-family: 'Roboto Condensed';
 }
 
 #main {
@@ -37,7 +38,7 @@ body {
     justify-content: center;
 }
 #main .flexContainer .mainContent {
-    background: aqua;
+    background: rgba(255, 255, 255, 0.76);
     width: 90%;
     height: 70%;
     display: flex;
@@ -45,6 +46,8 @@ body {
     align-items: center;
     justify-content: space-around;
     margin-top: 10px;
+    box-shadow: 0 30px 40px rgba(0,0,0,.1);
+    border-radius: 10px;
 }
 #main .flexContainer .mainContent .mainText {
     display: flex;
@@ -63,7 +66,9 @@ body {
     width: 100%;
 }
 #main .flexContainer .mainContent .imageContainer .img{
-    background: lime;
+    background: lightgray;
+    margin-left: 60px;
+    margin-right: 60px;
     width: 20vw;
     height: 15vh;
 }
