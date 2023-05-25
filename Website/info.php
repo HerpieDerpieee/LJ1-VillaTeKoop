@@ -59,11 +59,6 @@
         header('Location: '.'index.php');
     }
 
-
-
-    
-
-
     $conn->close();
     arsort($bidding);
     $bidding = array_slice($bidding, 0, 3);
