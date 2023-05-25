@@ -61,7 +61,7 @@
         <div id="maps">
             <h2>Locatie</h2>
             <div class="temp">
-                <iframe src="<?= $data["location"] ?>" width="80%" height="85%"></iframe
+                <iframe src="<?= $data["location"] ?>" width="80%" height="85%"></iframe>
             </div>
         </div>
     </div>

@@ -9,8 +9,8 @@
         </div>
     </div>
     <div class="headerContentRight">
-        <button class="button" id="LogIn">Log In</button>
-        <button class="button" id="Regis">Registreer</button>
+        <button class="button mouseOverBigger" id="LogIn">Log In</button>
+        <button class="button mouseOverBigger" id="Regis">Registreer</button>
     </div>
     <style>
         /*---------------------HEADER------------------------*/
@@ -69,6 +69,12 @@
             border: #5588e7 solid 2px;
             background-color: #5588e7 ;
             color: white;
+        }
+        .mouseOverBigger{
+            transition: 0.3s;
+        }
+        .mouseOverBigger:hover{
+            transform: scale(1.1);
         }
     </style>
 </div>
