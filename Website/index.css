@@ -62,13 +62,11 @@ body {
 }
 #main .flexContainer .mainContent .imageContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
 }
 #main .flexContainer .mainContent .imageContainer .img{
     background: transparent;
-    margin-left: 60px;
-    margin-right: 60px;
     width: 20vw;
     height: 20vh;
     display: flex;
