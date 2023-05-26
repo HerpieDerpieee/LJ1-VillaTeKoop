@@ -10,6 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="info.css">
     <title>Villas4U</title>
+    <script src="info.js" defer></script>
 </head>
 <body>
 <div id="root">
