@@ -23,7 +23,7 @@
 #main {
     width: 100%;
     height: var(--body-height);
-    background: deeppink;
+    background: white;
 }
 #main .slider {
     width: 100%;
@@ -31,30 +31,36 @@
     background: red;
 }
 #main #mainContent {
-    width: 100%;
+    width: 90%;
     height: 50%;
-    background: lime;
+    background: white;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 20% 35% 45%;
+    margin-left:2.5%;
+    column-gap: 5%;
+    row-gap:1%;
 }
 #mainContent #quote {
     grid-column: 1;
     grid-row:1;
-    background: aqua;
+    background: white !important;
     display: flex;
-    align-items: center;
+    justify-content: center;
+}
+#quote h1 {
+    text-align: center;
 }
 #mainContent #indeling {
     grid-column: 1;
     grid-row: 2;
-    background: hotpink;
+    background: white;
 
 }
 #mainContent #boden {
     grid-column: 2;
     grid-row:2;
-    background:magenta;
+    background:white;
 }
 #mainContent #boden ol {
     list-style: none;
@@ -62,7 +68,7 @@
 #mainContent #maps {
     grid-column: 1;
     grid-row: 3;
-    background: crimson;
+    background: white;
 }
 #mainContent #maps .temp {
     display: flex;
@@ -73,4 +79,8 @@
 #mainContent #form {
     grid-column:2;
     grid-row:3 !important;
+}
+
+#mainContent>div {
+    background: rgba(80,80,80,0.05) !important;
 }
