@@ -1,0 +1,33 @@
+* {
+    margin:0;
+    padding:0;
+
+}
+
+:root {
+    --page-height: 100vh;
+    --header-height: 7.5vh;
+    --footer-height: 25vh;
+    --body-height: calc(var(--page-height) - var(--header-height) - var(--footer-height));
+}
+
+#root {
+    height: var(--page-height);
+    width: 100% !important;
+}
+
+
+
+/*---------------------MAIN------------------------*/
+body {
+    background: url("./img/achtergrond.png");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto Condensed';
+}
+
+#main {
+    width: 100vw;
+    height: var(--body-height);
+
+}

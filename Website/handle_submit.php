@@ -26,7 +26,7 @@
         $mail = $_POST['mail'];
         $bod = $_POST['bod'];
 
-        
+
 
         $sql = "INSERT INTO BIDDEN VALUES ($idVar, '$voornaam $achternaam', $bod, '$mail', '$tnummer')";
 
