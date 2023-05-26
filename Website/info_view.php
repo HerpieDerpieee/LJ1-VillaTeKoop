@@ -35,7 +35,7 @@
                 <label for="lname">Achternaam:</label><br>
                 <input type="text" id="lname" name="lname" ><br>
                 <label for="tnum">Telefoonnummer:</label><br>
-                <input type="tel" id="tnum" name="tnum" placeholder="+31 6 xxxxxxxx" pattern="+31[6]{1}[0-9]{8}" ><br>
+                <input type="tel" id="tnum" name="tnum" placeholder="06 xxxxxxxx" pattern="[06]{1}[0-9]{8}" value="06"><br>
                 <label for="mail">E-mail:</label><br>
                 <input type="text" id="mail" name="mail" ><br>
                 <label for="bod">Bod:</label><br>
