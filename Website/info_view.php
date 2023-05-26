@@ -42,7 +42,7 @@
                 <input type="number" id="bod" name="bod" value="1000000" min="1000000"><br>
                 <input type="hidden" name="id" value="<?= $_GET['id'] ?>">
 
-                <input type="button" onclick="formcheck()" name="submit" value="Bied">
+                <input type="button" id="submit" name="submit" value="Bied">
             </form>
         </div>
     </div>
