@@ -1,6 +1,20 @@
 <div id="main">
-    <div class="slider">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="./img/<?= $data['imgSrc'] ?>2.jpg" style="width:100%">
+        </div>
 
+        <div class="mySlides fade">
+            <img src="./img/<?= $data['imgSrc'] ?>3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./img/<?= $data['imgSrc'] ?>4.jpg" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <div id="mainContent">
         <div id="quote">
@@ -23,7 +37,7 @@
         <div id="maps">
             <h2>Locatie</h2>
             <div class="temp">
-                <iframe src="<?= $data["location"] ?>" width="80%" height="85%"></iframe>
+                <iframe src="<?= $data["location"] ?>" width="80%" height="85%" frameBorder="0"></iframe>
             </div>
         </div>
         <div id="form">
