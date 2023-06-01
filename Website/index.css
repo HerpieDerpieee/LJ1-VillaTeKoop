@@ -81,6 +81,7 @@ body {
     justify-content: center;
     filter: grayscale(100%);
     transition: 0.5s;
+    max-width: 280px;
 }
 
 .huisimages:hover{
