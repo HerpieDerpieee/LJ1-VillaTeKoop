@@ -4,8 +4,8 @@
             <img src="./img/logo.png" alt="logo" class="logo">
         </div>
         <div class="navLinks">
-            <a href="../index.php" class="link">Home</a>
-            <a href="../contact.php" class="link">Contact</a>
+            <a href="index.php" class="link">Home</a>
+            <a href="contact.php" class="link">Contact</a>
         </div>
     </div>
     <div class="headerContentRight">
