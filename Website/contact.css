@@ -19,11 +19,15 @@
 
 
 /*---------------------MAIN------------------------*/
+*{
+    font-family: 'Roboto Condensed';
+}
+
 body {
     background: url("./img/achtergrond.png");
     background-size: cover;
     background-position: center;
-    font-family: 'Roboto Condensed';
+
 }
 
 #main {
@@ -33,12 +37,75 @@ body {
     width: 80%;
     height: var(--body-height);
     background-color: rgba(255, 255, 255, 0.76);
+    ;
 }
 
 #titel {
 
     font-family: 'Roboto Condensed';
     text-align: center;
-    font-size: 70px;
+    font-size: min(10vw, 70px);
+}
 
+#justi{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+#formu{
+    display: grid;
+    grid-template-columns: 150px 200px;
+    row-gap: 5px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+#formu input {
+    border: black 1px solid;
+    background-color: #d0d0d0;
+}
+
+#formu input:focus , #vraag:focus{
+    outline: none !important;
+    background-color: #ececec;
+}
+
+#vraag {
+    background-color: #d0d0d0;
+    height: 100px;
+    width: 300px;
+    border: black 1px solid;
+}
+
+#verzend {
+    background-color: transparent !important;
+    border: #5588e7 2px solid !important;
+    color: #5588e7;
+    border-radius: 5px;
+    height: 30px;
+    width: 150px;
+    margin-left: 300px;
+}
+
+#outer-div {
+    border-top: #aaaaaa solid 2px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    height: 100%;
+}
+
+#inner-div1{
+
+    width: 100%;
+    height: 100%;
+}
+
+#inner-div2{
+
+    width: 100%;
+    height: 100%;
 }
