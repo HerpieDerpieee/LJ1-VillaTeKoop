@@ -21,12 +21,14 @@
 /*---------------------MAIN------------------------*/
 *{
     font-family: 'Roboto Condensed';
+
 }
 
 body {
     background: url("./img/achtergrond.png");
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 
 }
 
@@ -77,6 +79,7 @@ body {
     height: 100px;
     width: 300px;
     border: black 1px solid;
+    resize: none;
 }
 
 #verzend {

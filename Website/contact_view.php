@@ -19,7 +19,7 @@
         <label for="vraag">Vraag/opmerking:</label>
         <textarea type="text" id="vraag" name="vraag" rows="5"> </textarea>
 
-        <input type="button" id="verzend" name="verzend" value="verzend">
+        <input type="button" id="verzend" name="verzend" value="verzend" class="mouseOverBigger">
     </form>
     </div>
     <div id="outer-div">
