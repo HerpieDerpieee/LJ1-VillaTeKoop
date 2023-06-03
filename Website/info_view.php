@@ -62,8 +62,7 @@
     </div>
 </div>
 <script>
-    function formCheck()
-    {
+    function formCheck() {
         let namecheck = /^[A-Za-z]*$/;
         let fnametrue = false;
         let lnametrue = false;
@@ -74,22 +73,67 @@
         let lname = document.getElementById("lname").value;
         let tnum = document.getElementById("tnum").value;
         let bod = document.getElementById("bod").value;
-        if(namecheck.test(fname)){
+        let email = document.getElementById("mail").value;
+
+        if (namecheck.test(fname)) {
             fnametrue = true;
         }
-        if(namecheck.test(lname)){
+        if (namecheck.test(lname)) {
             lnametrue = true;
         }
         tnum = tnum.replace(/\s/g, '');
-        if(!isNaN(tnum) && tnum.length == 10){
+        if (!isNaN(tnum) && tnum.length == 10) {
             tnumtrue = true;
         }
-        if(!isNaN(bod) && bod > 999999){
+        if (!isNaN(bod) && bod > 999999) {
             bodtrue = true;
         }
-        //if(){
-        //  emailtrue = true;
-        //}
 
+        if (fnametrue && lnametrue && tnumtrue && bodtrue) {
+            // Send an AJAX request to the PHP script
+            let xhr = new XMLHttpRequest();
+            xhr.open("POST", "verify.php", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    let response = xhr.responseText;
+                    if (response.startsWith("success:")) {
+                        let verificationCode = response.split(":")[1];
+                        // Prompt for verification code
+                        let userCode = prompt("Enter the verification code:");
+                        if (userCode && userCode.trim() === verificationCode) {
+                            // Code is correct, proceed to insert data into the database
+                            let id = "<?php echo $_GET['id']; ?>";
+
+                            let data = "id=" + encodeURIComponent(id) + "&fname=" + encodeURIComponent(fname) + "&lname=" + encodeURIComponent(lname) + "&bod=" + encodeURIComponent(bod) + "&email=" + encodeURIComponent(email) + "&tnum=" + encodeURIComponent(tnum);
+
+                            fetch("insert.php", {
+                                method: "POST",
+                                headers: {
+                                    "Content-Type": "application/x-www-form-urlencoded"
+                                },
+                                body: data
+                            })
+                            .then(response => response.text())
+                            .then(insertResponse => {
+                                // Handle the response as needed
+                            })
+                            .catch(error => {
+                                // Handle any error in the AJAX request
+                                console.error("Error:", error);
+                            });
+                        } else {
+                            // Code is incorrect
+                            alert("Incorrect verification code. Please try again.");
+                        }
+                    } else {
+                        // Handle any error in the verification process
+                        alert("Verification process failed. Please try again later.");
+                    }
+                }
+            };
+            let requestData = "email=" + encodeURIComponent(email);
+            xhr.send(requestData);
+        }
     }
 </script>
