@@ -23,7 +23,7 @@
     </form>
     </div>
     <div id=line>
-        <p>Andere manieren on contact te zoeken</p>
+        <p>Andere manieren om contact te zoeken</p>
     <div id="outer-div">
         <div id="inner-div1">
             <br>
@@ -33,7 +33,10 @@
 
         </div>
         <div id="inner-div2">
-
+            <br>
+            <p><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+            <br>
+            <p><a href="https://twitter.com/" target="_blank">Twitter</a></p>
         </div>
     </div>
     </div>

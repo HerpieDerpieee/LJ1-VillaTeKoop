@@ -1,15 +1,15 @@
 <div id="footer">
     <div class="aboveLine">
         <div class="left">
-            <a href="">Link 1</a>
-            <a href="">Link 2</a>
-            <a href="">Link 3</a>
+            <a href="404.html">Link 1</a>
+            <a href="404.html">Link 2</a>
+            <a href="404.html">Link 3</a>
         </div>
         <div class="center"><img src="./img/footerimg.png"></div>
         <div class="right">
-            <a href="">Link 4</a>
-            <a href="">Link 5</a>
-            <a href="">Link 6</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Link 4</a>
+            <a href="404.html">Link 5</a>
+            <a href="404.html">Link 6</a>
         </div>
     </div>
     <hr>
