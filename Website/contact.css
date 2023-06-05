@@ -92,9 +92,19 @@ body {
     margin-left: 300px;
 }
 
-#outer-div {
+#line {
     border-top: #aaaaaa solid 2px;
     margin-top: 50px;
+
+}
+
+#line p{
+    text-align: center;
+}
+
+#outer-div {
+
+
     display: grid;
     grid-template-columns: auto auto;
     width: 100%;
@@ -102,13 +112,24 @@ body {
 }
 
 #inner-div1{
-
     width: 100%;
     height: 100%;
 }
 
-#inner-div2{
+#inner-div1 p{
+    margin-left: 10%;
+    text-align: start;
 
+
+}
+
+#inner-div2{
+ background: #717171;
     width: 100%;
     height: 100%;
+}
+
+#inner-div2 p {
+    margin-left: 10%;
+    text-align: start;
 }

@@ -22,12 +22,19 @@
         <input type="button" id="verzend" name="verzend" value="verzend" class="mouseOverBigger">
     </form>
     </div>
+    <div id=line>
+        <p>Andere manieren on contact te zoeken</p>
     <div id="outer-div">
         <div id="inner-div1">
+            <br>
+            <p>Tel: 505-503-4455</p>
+            <br>
+            <p>E-mail: Info@villatekoop.nl</p>
 
         </div>
         <div id="inner-div2">
 
         </div>
+    </div>
     </div>
 </div>
