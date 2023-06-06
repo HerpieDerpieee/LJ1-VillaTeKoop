@@ -42,21 +42,21 @@
         </div>
         <div id="form">
             <h2>Doe een bod</h2>
-            <form onsubmit="event.preventDefault(); formCheck()">
+            <form onsubmit="event.preventDefault(); formCheck()" id="formu">
 
-                <label for="fname">Voornaam:</label><br>
-                <input type="text" id="fname" name="fname" ><br>
-                <label for="lname">Achternaam:</label><br>
-                <input type="text" id="lname" name="lname" ><br>
-                <label for="tnum">Telefoonnummer:</label><br>
-                <input type="tel" id="tnum" name="tnum" placeholder="06 xxxxxxxx" value="06"><br>
-                <label for="mail">E-mail:</label><br>
-                <input type="text" id="mail" name="mail" ><br>
-                <label for="bod">Bod:</label><br>
-                <input type="number" id="bod" name="bod" value="1000000" min="1000000"><br>
+                <label for="fname">Voornaam:</label>
+                <input type="text" id="fname" name="fname" >
+                <label for="lname">Achternaam:</label>
+                <input type="text" id="lname" name="lname" >
+                <label for="tnum">Telefoonnummer:</label>
+                <input type="tel" id="tnum" name="tnum" placeholder="06 xxxxxxxx" value="06">
+                <label for="mail">E-mail:</label>
+                <input type="text" id="mail" name="mail" >
+                <label for="bod">Bod:</label>
+                <input type="number" id="bod" name="bod" value="1000000" min="1000000">
                 <input type="hidden" name="id" value="<?= $_GET['id'] ?>">
 
-                <input type="submit" value="Bied">
+                <input type="submit" id="verzend" value="Bied">
             </form>
         </div>
     </div>
