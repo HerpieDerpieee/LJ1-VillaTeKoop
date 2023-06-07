@@ -109,6 +109,13 @@
                             preConfirm: (code) => {
                                 if (code && code.trim() === verificationCode) {
                                     // Code is correct, proceed to insert data into the database
+
+                                    Swal.fire(
+                                        'Succes!',
+                                        'Je bod is geplaatst',
+                                        'success'
+                                    )
+
                                     let id = "<?php echo $_GET['id']; ?>";
 
                                     let data = "id=" + encodeURIComponent(id) + "&fname=" + encodeURIComponent(fname) + "&lname=" + encodeURIComponent(lname) + "&bod=" + encodeURIComponent(bod) + "&email=" + encodeURIComponent(email) + "&tnum=" + encodeURIComponent(tnum);
