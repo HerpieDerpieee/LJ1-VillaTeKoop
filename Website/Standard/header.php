@@ -75,6 +75,7 @@
         }
         .mouseOverBigger{
             transition: 0.3s;
+            cursor: pointer;
         }
         .mouseOverBigger:hover{
             transform: scale(1.1);

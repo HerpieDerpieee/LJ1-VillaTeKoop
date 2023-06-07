@@ -56,7 +56,7 @@
                 <input type="number" id="bod" name="bod" value="1000000" min="1000000">
                 <input type="hidden" name="id" value="<?= $_GET['id'] ?>">
 
-                <input type="submit" id="verzend" value="Bied">
+                <input type="submit" id="verzend" value="Bied" class="mouseOverBigger">
             </form>
         </div>
     </div>
