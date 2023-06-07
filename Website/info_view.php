@@ -61,6 +61,7 @@
         </div>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>  <!-- sweetalert import-->
 <script>
     function formCheck() {
         let namecheck = /^[A-Za-z]*$/;
@@ -100,32 +101,40 @@
                     if (response.startsWith("success:")) {
                         let verificationCode = response.split(":")[1];
                         // Prompt for verification code
-                        let userCode = prompt("Enter the verification code:");
-                        if (userCode && userCode.trim() === verificationCode) {
-                            // Code is correct, proceed to insert data into the database
-                            let id = "<?php echo $_GET['id']; ?>";
+                        Swal.fire({
+                            title: 'Submit your Github username',
+                            input: 'text',
+                            showCancelButton: false
+                            confirmButtonText: 'Verify',
+                            showLoaderOnConfirm: true,
+                            preConfirm: (code) => {
+                                if (code && code.trim() === verificationCode) {
+                                    // Code is correct, proceed to insert data into the database
+                                    let id = "<?php echo $_GET['id']; ?>";
 
-                            let data = "id=" + encodeURIComponent(id) + "&fname=" + encodeURIComponent(fname) + "&lname=" + encodeURIComponent(lname) + "&bod=" + encodeURIComponent(bod) + "&email=" + encodeURIComponent(email) + "&tnum=" + encodeURIComponent(tnum);
+                                    let data = "id=" + encodeURIComponent(id) + "&fname=" + encodeURIComponent(fname) + "&lname=" + encodeURIComponent(lname) + "&bod=" + encodeURIComponent(bod) + "&email=" + encodeURIComponent(email) + "&tnum=" + encodeURIComponent(tnum);
 
-                            fetch("insert.php", {
-                                method: "POST",
-                                headers: {
-                                    "Content-Type": "application/x-www-form-urlencoded"
-                                },
-                                body: data
-                            })
-                            .then(response => response.text())
-                            .then(insertResponse => {
-                                // Handle the response as needed
-                            })
-                            .catch(error => {
-                                // Handle any error in the AJAX request
-                                console.error("Error:", error);
-                            });
-                        } else {
-                            // Code is incorrect
-                            alert("Incorrect verification code. Please try again.");
-                        }
+                                    fetch("insert.php", {
+                                        method: "POST",
+                                        headers: {
+                                            "Content-Type": "application/x-www-form-urlencoded"
+                                        },
+                                        body: data
+                                    })
+                                        .then(response => response.text())
+                                        .then(insertResponse => {
+                                            // Handle the response as needed
+                                        })
+                                        .catch(error => {
+                                            // Handle any error in the AJAX request
+                                            console.error("Error:", error);
+                                        });
+                                } else {
+                                    // Code is incorrect
+                                    alert("Incorrect verification code. Please try again.");
+                                }
+                            }
+                        });
                     } else {
                         // Handle any error in the verification process
                         alert("Verification process failed. Please try again later.");
