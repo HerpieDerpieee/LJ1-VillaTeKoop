@@ -102,10 +102,9 @@
                         let verificationCode = response.split(":")[1];
                         // Prompt for verification code
                         Swal.fire({
-                            title: 'Submit your Github username',
+                            title: 'Submit your verification code',
                             input: 'text',
-                            showCancelButton: false
-                            confirmButtonText: 'Verify',
+                            showCancelButton: false,
                             showLoaderOnConfirm: true,
                             preConfirm: (code) => {
                                 if (code && code.trim() === verificationCode) {
