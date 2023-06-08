@@ -86,7 +86,7 @@
         if (!isNaN(tnum) && tnum.length == 10) {
             tnumtrue = true;
         }
-        if (!isNaN(bod) && bod > 999999) {
+        if (!isNaN(bod) && bod > 999999 && bod > parseInt(<?= $bidding[0] ?>)) {
             bodtrue = true;
         }
 
