@@ -33,7 +33,7 @@
     }
 
 
-    $sql = "SELECT name, price FROM BIDDEN WHERE villaID=" . $_GET["id"];
+    $sql = "SELECT name, price FROM BIEDEN WHERE villaID=" . $_GET["id"];
     $result = $conn->query($sql);
 
     $bidding = array();

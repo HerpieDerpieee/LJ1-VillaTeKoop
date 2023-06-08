@@ -25,7 +25,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO BIDDEN (villaID, name, price, email, phone) VALUES ($id, '$name', $bod, '$email', '$tnum')";
+$sql = "INSERT INTO BIEDEN (villaID, name, price, email, phone) VALUES ($id, '$name', $bod, '$email', '$tnum')";
 
 if ($conn->query($sql) === true) {
     echo "success";
