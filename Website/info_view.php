@@ -77,16 +77,24 @@
 
         if (namecheck.test(fname)) {
             fnametrue = true;
+        } else {
+            alert("First name does not follow critera")
         }
         if (namecheck.test(lname)) {
             lnametrue = true;
+        } else {
+            alert("Last name does not follow critera")
         }
         tnum = tnum.replace(/\s/g, '');
         if (!isNaN(tnum) && tnum.length == 10) {
             tnumtrue = true;
+        } else {
+            alert("Phone number does not follow critera")
         }
-        if (!isNaN(bod) && bod > 999999 && bod > parseInt(<?= $bidding[0] ?>)) {
+        if (!isNaN(bod) && bod > 999999 && bod > parseInt(<?php foreach($bidding as $name => $value){ echo $value; break; }  ?>)) {
             bodtrue = true;
+        } else {
+            alert("Money spent does not follow critera")
         }
 
         if (fnametrue && lnametrue && tnumtrue && bodtrue) {
@@ -113,7 +121,12 @@
                                         'Succes!',
                                         'Je bod is geplaatst',
                                         'success'
-                                    )
+                                    ).then((result) => {
+                                        /* Read more about isConfirmed, isDenied below */
+                                        if (result.isConfirmed) {
+                                            location.reload()
+                                        }
+                                    });
 
                                     let id = "<?php echo $_GET['id']; ?>";
 
@@ -126,14 +139,14 @@
                                         },
                                         body: data
                                     })
-                                        .then(response => response.text())
-                                        .then(insertResponse => {
-                                            // Handle the response as needed
-                                        })
-                                        .catch(error => {
-                                            // Handle any error in the AJAX request
-                                            console.error("Error:", error);
-                                        });
+                                    .then(response => response.text())
+                                    .then(insertResponse => {
+                                        //do stuff i guess
+                                    })
+                                    .catch(error => {
+                                        // Handle any error in the AJAX request
+                                        console.error("Error:", error);
+                                    });
                                 } else {
                                     // Code is incorrect
                                     alert("Incorrect verification code. Please try again.");

@@ -6,13 +6,14 @@ body{
     width: 100%;
 }
 #terug{
-    
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 #terug a{
     position: absolute;
     text-decoration: none;
     color: black;
     font-size: 40px;
-    margin-top: 20vh;
-    margin-left: 34vw;
 }

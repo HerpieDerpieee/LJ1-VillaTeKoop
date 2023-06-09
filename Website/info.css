@@ -29,6 +29,7 @@
     display: grid;
     grid-template-columns: 100%;
     grid-auto-rows: 50% 50%;
+    font-family: "Roboto Condensed";
 }
 
 #main #mainContent {

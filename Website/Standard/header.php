@@ -9,8 +9,8 @@
         </div>
     </div>
     <div class="headerContentRight">
-        <button class="button mouseOverBigger" id="LogIn">Log In</button>
-        <button class="button mouseOverBigger" id="Regis">Registreer</button>
+        <button class="button mouseOverBigger" onclick="window.location.href='501.html'" id="LogIn">Log In</button>
+        <button class="button mouseOverBigger" onclick="window.location.href='501.html'" id="Regis">Registreer</button>
     </div>
     <style>
         /*---------------------HEADER------------------------*/
