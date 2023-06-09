@@ -1,7 +1,7 @@
 <div id="header">
     <div class="headerContentLeft">
         <div class="logoLeft">
-            <img src="./img/logo.png" alt="logo" class="logo">
+            <img src="./img/logo.png" alt="logo" class="logo" style="cursor: pointer" onclick="window.location.href='index.php'">
         </div>
         <div class="navLinks">
             <a href="index.php" class="link">Home</a>

@@ -1,25 +1,25 @@
 <div id="footer">
     <div class="aboveLine">
         <div class="left">
-            <a href="404.html">Link 1</a>
-            <a href="404.html">Link 2</a>
-            <a href="404.html">Link 3</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://twitter.com/">Twitter</a>
+            <a href="https://www.facebook.com/">Facebook</a>
         </div>
         <div class="center"><img src="./img/footerimg.png"></div>
         <div class="right">
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Link 4</a>
-            <a href="404.html">Link 5</a>
-            <a href="404.html">Link 6</a>
+            <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank">YouTube</a>
+            <a href="https://nl.linkedin.com/">LinkedIn</a>
+            <a href="https://www.tiktok.com/">TikTok</a>
         </div>
     </div>
     <hr>
     <div class="belowLine">
         <div class="belowContent">
             <div class="footerSocials">
-                <div class="social mouseOverBigger"></div>
-                <div class="social mouseOverBigger"></div>
-                <div class="social mouseOverBigger"></div>
-                <div class="social mouseOverBigger"></div>
+                <div class="social mouseOverBigger" onclick="window.location.href='https://github.com/HerpieDerpieee/VillaTeKoop'">Github</div>
+                <div class="social mouseOverBigger" onclick="window.location.href='https://github.com/Lukaas123'" >Lukaas</div>
+                <div class="social mouseOverBigger" onclick="window.location.href='https://github.com/KevinKr04'" >Kevin</div>
+                <div class="social mouseOverBigger" onclick="window.location.href='https://github.com/HerpieDerpieee'" >Valentijn</div>
             </div>
             <span>
                 ValentijnLukaasKevin2023©
@@ -104,7 +104,11 @@
             background: #5588e7;
             width: 20%;
             height: 100%;
-            border-radius: 50px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
         }
 
         .mouseOverBigger{

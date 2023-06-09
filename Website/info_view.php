@@ -69,7 +69,6 @@
         let lnametrue = false;
         let tnumtrue = false;
         let bodtrue = false;
-        let emailtrue = false;
         let fname = document.getElementById("fname").value;
         let lname = document.getElementById("lname").value;
         let tnum = document.getElementById("tnum").value;

@@ -45,7 +45,7 @@
             $bidding[$row["name"]] = $row["price"];
         }
     } else {
-        header('Location: '.'index.php');
+        header('Location: '.'404.html');
     }
 
     $sql = "SELECT * FROM VILLAS WHERE id=" . $_GET["id"];
@@ -57,7 +57,7 @@
             $data = $row;
         }
     } else {
-        header('Location: '.'index.php');
+        header('Location: '.'404.html');
     }
 
     $conn->close();
