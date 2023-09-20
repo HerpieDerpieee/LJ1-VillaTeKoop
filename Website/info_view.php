@@ -1,4 +1,4 @@
-<div id="main">
+<div id="main" onload="showSlides(slideIndex);">
     <div class="slideshow-container">
         <div class="mySlides fade">
             <img src="./img/<?= $data['imgSrc'] ?>2.jpg" style="width:100%">

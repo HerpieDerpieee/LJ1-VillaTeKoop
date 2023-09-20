@@ -14,7 +14,7 @@
     <script src="info.js" defer></script>
 </head>
 <body>
-<div id="root">
+<div id="root"">
     <?php
 
 
